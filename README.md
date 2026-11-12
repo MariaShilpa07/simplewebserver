@@ -80,7 +80,7 @@ content =
     </table>
 </body>
 </html>
-```
+
 
 class MyHandler(BaseHTTPRequestHandler):
     def do_GET(self):
@@ -94,6 +94,7 @@ server_address = ('', 8000)
 httpd = HTTPServer(server_address, MyHandler)
 print("My webserver is running...")
 httpd.serve_forever()
+```
 
 
 ## OUTPUT:
